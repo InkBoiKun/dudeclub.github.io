@@ -6,9 +6,18 @@
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <script>
+	
     function changeColor(color){
+		var x=document.getElementById("lastco").value;
+		//console.log('hola jj, el color es='+x);
+		document.body.style.backgroundColor = x;
+		if(x=="lightgreen"){
+			document.getElementById("lastco").value="lightblue";
+		}
+		if(x!="lightgreen"){
+			document.getElementById("lastco").value="lightgreen";
+		}
 		
-        document.body.style.backgroundColor = color;
     }
 </script>
 <body bgcolor="lightgreen">
@@ -22,8 +31,14 @@
 
 <br>
 Try out our change color buttton
-<input type="button" value="push me" onclick="javascript:changeColor('lightblue');" />
+<input type="button" value="push me" onclick="javascript:changeColor();" />
+<input type="hidden" id="lastco" value="lightblue"/>
 <br>
 <p> Welcome  to the dude club website!In this website you will find favourite websites info and dude daliy news, but for now we are just updating the website</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rMR3VYYpluo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>This is a club for boys how just want to have a good time, break and relax.- <b>Isaac and Jacob</b></p>
 </body>
 </html>
+
