@@ -1,0 +1,34 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html"><head>
+    <meta charset="UTF-8">
+    <title>D.U.D.E News page </title>
+	<link rel="shortcut icon" href="">
+<script>
+  function changeColor(color){
+		var x=document.getElementById("lastco").value;
+		//console.log('hola jj, el color es='+x);
+		document.body.style.backgroundColor = x;
+		if(x=="lightgreen"){
+			document.getElementById("lastco").value="lightblue";
+		}
+		if(x!="lightgreen"){
+			document.getElementById("lastco").value="lightgreen"
+			}
+    }
+</script></head>
+
+<body bgcolor="lightgreen">
+<h1>Dude News</h1>  
+<h3>You Get Here!<h3>
+<h5>Scroll down for more News stories! </h5>
+<p>Try out our change color buttton<p>
+<input type="button" value="push me" onclick="javascript:changeColor();">
+<input type="hidden" id="lastco" value="lightblue">
+<br>  
+<p>Lego Mario is expanding with..
+    Lego luigi! plus more sets so check it<a href= "https://www.lego.com/en-ca/themes/super-mario"> out.</a> </p>
+    <img src="lego-luigi-super-mario.jpg" width="700" height="300">
+    <br>
+    <p> A new Nintendo switch console is coming out! Check out the link below for more info. 
+        <a href= "https://www.youtube.com/watch?v=4mHq6Y7JSmg"> New switch video!</a>   </p>
+        <img src="nintendo-switch-oled-model.jpg" width="600" height="300">
+        <p>For Minecraft Fans, The Caves and Cliffs Update<a href= "https://www.youtube.com/watch?v=XZLn4_zE4E4"> (Version 1.17) </a> is finally here! </p>
