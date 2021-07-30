@@ -1,0 +1,35 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html"><head>
+    <meta charset="UTF-8">
+    <title>D.U.D.E club challenge board </title>
+	<link rel="shortcut icon" href="">
+<script>
+  function changeColor(color){
+		var x=document.getElementById("lastco").value;
+		//console.log('hola jj, el color es='+x);
+		document.body.style.backgroundColor = x;
+		if(x=="lightgreen"){
+			document.getElementById("lastco").value="lightblue";
+		}
+		if(x!="lightgreen"){
+			document.getElementById("lastco").value="lightgreen"
+			}
+    }
+</script></head>
+<script> 
+    function goBack() {
+        window.history.back();
+    }
+  
+  </script></head>
+<body bgcolor="lightgreen">
+<h1>Welcome to the d.u.d.e. weekly challenge board!</h1>
+<br> 
+<p>If you want to go back..... you know what to do: <button onclick="goBack()">Go Back</button> </p>
+Try out our change color buttton
+<input type="button" value="push me" onclick="javascript:changeColor();">
+<input type="hidden" id="lastco" value="lightblue">
+<br>
+<p>Week 1: try out our new <a href="/Games/simple.html"> Flappy Bird</a>  game! Try and get the highest score possible!</p>
+<img src="flappy.jpg" width="30%"/> </a>
+<p>Week 2: How much do YOU know about Mario? Take this fun <a href="https://play.nintendo.com/activities/skill-quizzes/power-up-quiz-fireballs/"> quiz </a> to find out! </p>
+<img src="3d woRLD.jpg" width="30%"/> </a>
